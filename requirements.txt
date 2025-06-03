@@ -5,3 +5,4 @@ opencv-contrib-python-headless
 fastapi==0.115.12
 numpy==2.2.6
 requests
+python-multipart
