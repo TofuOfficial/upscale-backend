@@ -1,5 +1,9 @@
 opencv-python==4.11.0.86
-fastapi==0.115.12
 opencv-contrib-python==4.11.0.86
+# for koyeb deployment to linux?
+# ------------------------------
+opencv-contrib-python-headless
+# ------------------------------
+fastapi==0.115.12
 numpy==2.2.6
 requests
