@@ -33,6 +33,10 @@ def _api_ai_upscaler(image, scale_factor) -> np.ndarray:
 async def api():
     return {"api": "working😁"}
 
+@app.get("/health")
+def health_check():
+    return {"status": "ok"}
+
 @app.post("/upscale/")
 async def upscale(file: UploadFile = File(...), scale_factor: int = Query(2, description="Scaling factor. Could be '2' or '4'")):
     if not file:
